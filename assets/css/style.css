@@ -331,7 +331,7 @@ aside .popContactChild a {
 
 .nameCard {
     width: 35rem;
-    aspect-ratio: 1;
+    aspect-ratio:  1;
     background-image: url('/assets/img/svg/shipBg.svg');
     background-repeat: no-repeat;
     background-position: center;
@@ -704,6 +704,7 @@ aside .popContactChild a {
     align-items: center;
     justify-content: center;
 }
+
 .contacts .conContent .conInfo .infoPerso div .icon:hover {
     background-color: var(--theame);
 }
