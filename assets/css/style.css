@@ -331,8 +331,8 @@ aside .popContactChild a {
 
 .nameCard {
     width: 35rem;
-    aspect-ratio:  1;
-    background-image: url('/assets/img/svg/shipBg.svg');
+    aspect-ratio: 1;
+    background-image: url('/assets/img/svg/shipBG.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
