@@ -10,7 +10,7 @@
     --text-thrHeading: #6a6945;
     --text-para: #969696;
 
-    --button: #67676794;
+    --button: #51515194;
     --button-hover: #df7e08;
 
     --theame: #a9a414;
@@ -500,7 +500,7 @@ aside .popContactChild a {
 }
 
 .popLanguage .popLanguageChild {
-    width: 3.5rem;
+    width: 3.7rem;
     aspect-ratio: 1;
     background-color: var(--button);
     list-style-type: none;
@@ -513,10 +513,12 @@ aside .popContactChild a {
 }
 
 .popLanguage .popLanguageChild a img {
+    width: 110%;
+    aspect-ratio: 1;
     list-style-type: none;
     transform: rotate(45deg);
     transition: 0.3s;
-    transform: rotate(calc(var(--l) * (360deg / -6)));
+    transform: rotate(calc(var(--l) * (360deg / -9)));
 }
 
 .skills .skillsContent .tools {
@@ -575,14 +577,16 @@ aside .popContactChild a {
 }
 
 .popTools .popToolsChild a img {
+    width: 110%;
+    aspect-ratio: 1;
     list-style-type: none;
     transform: rotate(45deg);
     transition: 0.3s;
-    transform: rotate(calc(var(--l) * (360deg / -6)));
+    transform: rotate(calc(var(--l) * (360deg / -9)));
 }
 
 .openChild {
-    transform: rotate(calc(var(--l) * (360deg / 6))) translateY(6rem);
+    transform: rotate(calc(var(--l) * (360deg / 9))) translateY(7rem);
 }
 
 
