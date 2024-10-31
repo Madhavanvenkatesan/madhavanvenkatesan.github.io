@@ -512,7 +512,7 @@ aside .popContactChild a {
     justify-content: center;
     border-radius: 10rem;
     position: absolute;
-    transition: 0.8s ease-in-out;
+    transition: 1s ease-in-out;
 }
 
 .popLanguage .popLanguageChild a{
@@ -524,7 +524,7 @@ aside .popContactChild a {
 .popLanguage .popLanguageChild a img {
     list-style-type: none;
     transform: rotate(45deg);
-    transition: 0.3s;
+    transition: 0.5s;
     transform: rotate(calc(var(--l) * (360deg / -9)));
 }
 
@@ -580,7 +580,7 @@ aside .popContactChild a {
     justify-content: center;
     border-radius: 10rem;
     position: absolute;
-    transition: 0.8s ease-in-out;
+    transition: 1s ease-in-out;
 }
 
 
@@ -592,7 +592,7 @@ aside .popContactChild a {
 .popTools .popToolsChild a img {
     list-style-type: none;
     transform: rotate(45deg);
-    transition: 0.3s;
+    transition: 0.5s;
     transform: rotate(calc(var(--l) * (360deg / -9)));
 }
 

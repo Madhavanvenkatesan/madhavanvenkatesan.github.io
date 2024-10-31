@@ -1,0 +1,23 @@
+const openContact = () => {
+    aside.classList.add('active');
+    popContact.classList.add('bounce');
+    for (let i = 0; i < popContactChild.length; i++) {
+        popContactChild[i].classList.add('open');
+    }
+}
+const closeContact = () => {
+    aside.classList.remove('active');
+    popContact.classList.remove('bounce');
+    for (let i = 0; i < popContactChild.length; i++) {
+        popContactChild[i].classList.remove('open');
+    }
+}
+popContact.addEventListener("click", (event) => {
+    event.stopPropagation(); // Prevent the click from reaching window
+    openContact();
+});
+window.addEventListener("click", (event) => {
+    if (!popContact.contains(event.target)) {
+        closeContact();
+    }
+});

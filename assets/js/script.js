@@ -4,21 +4,34 @@ const popContact = document.getElementsByClassName("popContact")[0];
 const popContactChild = document.getElementsByClassName("popContactChild");
 const aside = document.querySelector("aside");
 
-popContact.addEventListener("click", (event) => {
-    event.stopPropagation(); // Prevent the click from reaching window
+const openContact = () => {
     aside.classList.toggle('active');
     popContact.classList.toggle('bounce');
     for (let i = 0; i < popContactChild.length; i++) {
         popContactChild[i].classList.toggle('open');
     }
+}
+const closeContact = () => {
+    aside.classList.remove('active');
+    popContact.classList.remove('bounce');
+    for (let i = 0; i < popContactChild.length; i++) {
+        popContactChild[i].classList.remove('open');
+    }
+}
+popContact.addEventListener("click", (event) => {
+    event.stopPropagation(); // Prevent the click from reaching window
+    openContact();
 });
 window.addEventListener("click", (event) => {
     if (!popContact.contains(event.target)) {
-        aside.classList.remove('active');
-        popContact.classList.remove('bounce');
-        for (let i = 0; i < popContactChild.length; i++) {
-            popContactChild[i].classList.remove('open');
-        }
+        closeContact();
+    }
+});
+window.addEventListener("scroll", (event) => {
+    if (window.scrollY == 0) {
+        openContact();
+    } else if (window.scrollY !== 0){
+        closeContact();
     }
 });
 
@@ -75,18 +88,17 @@ window.addEventListener("scroll", function () {
         }
     }
 
-
     const openLang = document.getElementById("openLang");
     const viewportOffsetLang = openLang.getBoundingClientRect();
     const openTools = document.getElementById("openTools");
     const viewportOffsetTools = openTools.getBoundingClientRect();
 
-    if (viewportOffsetLang.top < (window.innerHeight - 100)){
+    if (viewportOffsetLang.top < (window.innerHeight - 100)) {
         for (let i = 0; i < popLanguageChild.length; i++) {
             popLanguageChild[i].classList.add('openChild');
         }
     }
-    if (viewportOffsetTools.top < (window.innerHeight - 100)){
+    if (viewportOffsetTools.top < (window.innerHeight - 100)) {
         for (let i = 0; i < popToolsChild.length; i++) {
             popToolsChild[i].classList.add('openChild');
         }
