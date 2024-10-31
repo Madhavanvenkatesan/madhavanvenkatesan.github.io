@@ -298,6 +298,9 @@ aside .popContactChild a {
     color: #ffffff;
     transition: 0.2s;
     transform: rotate(calc(var(--i) * (360deg / -8)));
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .home {
@@ -512,9 +515,13 @@ aside .popContactChild a {
     transition: 0.8s ease-in-out;
 }
 
+.popLanguage .popLanguageChild a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .popLanguage .popLanguageChild a img {
-    width: 110%;
-    aspect-ratio: 1;
     list-style-type: none;
     transform: rotate(45deg);
     transition: 0.3s;
@@ -576,9 +583,13 @@ aside .popContactChild a {
     transition: 0.8s ease-in-out;
 }
 
+
+.popTools .popToolsChild a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .popTools .popToolsChild a img {
-    width: 110%;
-    aspect-ratio: 1;
     list-style-type: none;
     transform: rotate(45deg);
     transition: 0.3s;
